@@ -1,0 +1,31 @@
+.page-me {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 100vh;
+  font-size: 32rpx;
+  font-weight: 300;
+  padding: 0 40rpx;
+}
+
+.user {
+  display: flex;
+  flex-shrink: 0;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  background-color: #DDD;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.analytics {
+  padding: 0 40px;
+}
+

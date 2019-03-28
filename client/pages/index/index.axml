@@ -1,0 +1,34 @@
+<!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
+<favorite>收藏小程序，下次使用更方便</favorite>
+
+<view class="page-home">
+  <view class="image-list">
+
+    <view a:if="{{ noImages }}">
+      <view class="placeholder">
+        暂时没有图片，可以上传一张。
+      </view>
+    </view>
+
+    <view a:else class="list">
+      <view class="item" a:for="{{ images }}" a:for-item="item" a:key="*this">
+        <view class="action-wrap">
+          <view class="button rename-button" data-itemId="{{ item._id }}" catchTap="rename">重命名</view>
+          <view class="button delete-button" data-itemId="{{ item._id }}" catchTap="delete">删除</view>
+        </view>
+        <view class="image-wrap">
+          <image class="image" mode="widthFix" src="{{ item.url }}" data-imageUrl="{{ item.url }}" onTap="preview" />
+        </view>
+        <view class="meta-wrap">
+          <view class="text">{{ item.text }}</view>
+          <view class="datetime">{{ item.uploadTime }}</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="footer">
+    <image class="avatar" src="{{ user.avatar }}" background-size="cover" onTap="showMe" />
+    <button class="add-button" hover-class="none" onTap="add">添加图片</button>
+  </view>
+</view>

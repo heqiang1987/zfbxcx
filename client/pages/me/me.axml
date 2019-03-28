@@ -1,0 +1,12 @@
+<view class="page-me">
+
+  <view class="user">
+    <image class="avatar" src="{{ user.avatar }}" background-size="cover" />
+    <view class="nickname">{{ user.nickName }}</view>
+  </view>
+
+  <view class="analytics">
+    总图片数量：{{ analytics.total }}
+  </view>
+
+</view>
