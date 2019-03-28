@@ -1,2 +1,60 @@
 <!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
-<view>12321321321</view>
+<view class="page">
+ <view class='flashdiv'>
+   <swiper indicator-dots="true" autoplay="false" >
+    <block a:for="{{ad}}">
+     <swiper-item>
+      <image src="{{item.ad_code}}" class="slide-image" />
+     </swiper-item>
+    </block>
+   </swiper>
+  </view>
+</view>
+  <view class='homead_div'>
+        <!-- 广告 -->
+    <!-- <view class='homead_div'>
+      <view class='homead clearfix'>
+        <view class='homeadlist'>
+          <navigator url=''><image src='/static/images/ad.jpg' mode='widthFix' /></navigator>
+        </view>
+        <view class='homeadlist'>
+          <navigator url=''><image src='/static/images/ad.jpg' mode='widthFix' /></navigator>
+        </view>
+      </view>
+    </view> -->
+
+     <!-- 显示特惠 -->
+     <view class='home_tel'>推荐产品</view>
+     <view class='home_product'>
+      <view class='home_product_list' a:for="{{jjgoods}}">
+         <navigator url=''>
+           <image src='{{item.original_img}}' mode='widthFix' />
+           <view class='home_product_wen'>
+              <view class='home_product_tel'>{{item.goods_name}}</view>
+              <view class='home_product_price'>
+          <text class='dollor'>￥</text>{{item.shop_price}}<text class='original_price'>{{item.market_price}}</text><text class='save_money'>现在购买立省{{item.market_price-item.shop_price}}元</text>
+              </view>
+              <view class='home_gobuy'>抢购</view>
+           </view>
+         </navigator>
+      </view>
+     </view>
+     <view class='home_tel'>热门产品</view>
+     <view class='home_product'>
+      <view class='home_product_list' a:for="{{jdgoods}}">
+         <navigator url=''>
+           <image src='{{item.original_img}}' mode='widthFix' />
+           <view class='home_product_wen'>
+              <view class='home_product_tel'>{{item.goods_name}}</view>
+              <view class='home_product_price'>
+          <text class='dollor'>￥</text>{{item.shop_price}}<text class='original_price'>{{item.market_price}}</text><text class='save_money'>现在购买立省{{item.market_price-item.shop_price}}元</text>
+              </view>
+              <view class='home_gobuy'>抢购</view>
+           </view>
+         </navigator>
+      </view>
+     </view>
+
+
+
+  </view>
