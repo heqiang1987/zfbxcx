@@ -6,9 +6,32 @@
     "pages/list/list",
     "pages/member/member",
     "pages/order/orderlist/orderlist",
-    "pages/goods/detail/detail"
+    "pages/goods/detail/detail",
+    "pages/goods/all/all"
   ],
-  "window": {
-    "defaultTitle": "服装库"
+  "tabBar": {
+    "textColor": "#000",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "images/icon-recommend.png",
+        "activeIcon": "images/icon-recommendon.png"
+      },
+      {
+        "pagePath": "pages/goods/all/all",
+        "name": "服装",
+        "icon": "images/icon-wish.png",
+        "activeIcon": "images/icon-wishon.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "name": "会员",
+        "icon": "images/icon-member.png",
+        "activeIcon": "images/icon-memberon.png"
+      }
+    ]
   }
 }

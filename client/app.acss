@@ -6804,3 +6804,4 @@ button.selectimgbtn::after{border:none;}
 .npicmsg{font-size:14px; margin-top:10px; color:#999;}
 .ggq{background:#fff; display:inline-block; font-size:16px; border:1px solid #ccc; margin-top:10px; padding:5px 20px; border-radius:20px;
 }
+.blockloading{text-align:center;}
