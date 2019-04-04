@@ -62,5 +62,8 @@ padding:0 10px;}
 .home_gobuy{height:60rpx; width:130rpx; background:#f03080; font-size:32rpx; color:#fff; line-height:58rpx; text-align:center;
 border-radius:8px; position:absolute; right:0; top:30rpx;}
 
+.producthref{display:block; margin:0rpx 30rpx 15px; border:1px solid #ccc; line-height:82rpx; border-radius:8px; text-align:center;
+background:#ef2c85; color:#fff;}
+
 
 

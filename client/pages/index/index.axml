@@ -39,6 +39,7 @@
          </navigator>
       </view>
      </view>
+     <navigator url="/pages/list/list?type=is_recommend" class="producthref" hover-class="navigator-hover">更多</navigator>
      <view class='home_tel'>热门产品</view>
      <view class='home_product'>
       <view class='home_product_list' a:for="{{jdgoods}}">

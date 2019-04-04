@@ -5,9 +5,10 @@
     "pages/me/me",
     "pages/list/list",
     "pages/member/member",
-    "pages/order/orderlist/orderlist"
+    "pages/order/orderlist/orderlist",
+    "pages/goods/detail/detail"
   ],
   "window": {
-    "defaultTitle": "图片画廊"
+    "defaultTitle": "服装库"
   }
 }
